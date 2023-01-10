@@ -7,28 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <script src="//unpkg.com/alpinejs" defer></script>
-    <link rel="stylesheet" href="src/css/style.css">    
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 
 <body>
     <header>
         <img class="logo" src="public/img/Logo.webp" alt="Logo">
-        <button aria-controls="mainNav"
-        @click="menuIsOpen = ! menuIsOpen"
-        class="header__menuBtn"> 
-        <img class="menu_image"src="public/img/Menu-icon-close.webp" alt="menu">
-    
-    </button>
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+            <img class="menu_image" src="public/img/Menu-icon-close.webp" alt="menu">
+
+        </button>
         <nav x-show="menuIsOpen" id="mainNav" x-transition.duration.100ms class="menu">
-          <ul style="list-style-type: none;">
-            <h1 style="text-align: center;">Artistes</h1>
-            <li><a href="#">Tony Smith </a></li>
-            <li><a href="#">François Morellet </a></li>
-            <li><a href="#">Gego</a></li>
-            <li><a href="#">Bice Lazzari</a></li>
-            <hr>
-            <li></li>
-          </ul>
+            <ul style="list-style-type: none;">
+                <h2>Artistes</h2>
+                <li class="Nom"><a href="Tony.html">Tony Smith </a></li>
+                <li class="Nom"><a href="francois.html">François Morellet </a></li>
+                <li class="Nom"><a href="gego.html">Gego</a></li>
+                <li class="Nom"><a href="bice.html">Bice Lazzari</a></li>
+                <hr>
+                <li class="Nom"><a href="bice.html">Billetterie</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -40,10 +38,12 @@
             plusieurs oeuvres d’Artistes reconnues
             Pour plus d’info cliquez sur le bouton.</p>
 
-        <div class="bouton_1">
-            <p class="texte_b"> Info</p>
-            <img class="fleche" src="public/img/Accueil/arrow.svg" alt="arrow">
-        </div>
+        <a href="Information.html">
+            <div class="bouton_1">
+                <p class="texte_b"> Info</p>
+                <img class="fleche" src="public/img/Accueil/arrow.svg" alt="arrow">
+            </div>
+        </a>
 
         <p class="texte">Minimalisme : <br>
             un mouvement de sculpture et de peinture né dans les années 1950, caractérisé par l'utilisation de formes
@@ -51,10 +51,12 @@
 
         <h2>Acheter vos billets</h2>
 
-        <div class="bouton_1">
-            <p class="texte_b"> Billeterie </p>
-            <img class="fleche" src="public/img/Accueil/arrow.svg" alt="arrow">
-        </div>
+        <a href=".html">
+            <div class="bouton_1">
+                <p class="texte_b"> Billeterie </p>
+                <img class="fleche" src="public/img/Accueil/arrow.svg" alt="arrow">
+            </div>
+        </a>
 
         <h2>Artistes</h2>
 
@@ -62,9 +64,11 @@
         <p class="Nom">Tony Smith</p>
         <p class="texte">Tony Smith, né le 23 septembre 1912 à South Orange (New Jersey) et mort </p>
 
-        <div class="bouton_2">
-            <p class="texte_bouton"> En savoir plus </p>
-        </div>
+        <a href="Tony.html">
+            <div class="bouton_2">
+                <p class="texte_bouton"> En savoir plus </p>
+            </div>
+        </a>
 
         <hr>
 
@@ -72,9 +76,11 @@
         <p class="Nom">François Morellet</p>
         <p class="texte">Tony Smith, né le 23 septembre 1912 à South Orange (New Jersey) et mort </p>
 
-        <div class="bouton_2">
-            <p class="texte_bouton"> En savoir plus </p>
-        </div>
+        <a href="francois.html">
+            <div class="bouton_2">
+                <p class="texte_bouton"> En savoir plus </p>
+            </div>
+        </a>
 
         <hr>
 
@@ -82,9 +88,11 @@
         <p class="Nom">Gego</p>
         <p class="texte">Tony Smith, né le 23 septembre 1912 à South Orange (New Jersey) et mort </p>
 
-        <div class="bouton_2">
-            <p class="texte_bouton"> En savoir plus </p>
-        </div>
+        <a href="gego.html">
+            <div class="bouton_2">
+                <p class="texte_bouton"> En savoir plus </p>
+            </div>
+        </a>
 
         <hr>
 
@@ -92,9 +100,11 @@
         <p class="Nom">Bice Lazzari</p>
         <p class="texte">Tony Smith, né le 23 septembre 1912 à South Orange (New Jersey) et mort </p>
 
-        <div class="bouton_2">
-            <p class="texte_bouton"> En savoir plus </p>
-        </div>
+        <a href="bice.html">
+            <div class="bouton_2">
+                <p class="texte_bouton"> En savoir plus </p>
+            </div>
+        </a>
 
         <h2>Quans les artistes
             ont rejoint le
@@ -130,8 +140,12 @@
 
         <img class="logo" src="public/img/Logo.webp" alt="Logo">
         <div class="footer_lien" style="list-style-type: none; padding-top: 10px;">
-            <a href="Information.html"><li>info</li></a>
-            <a href="contact.html"><li>Contact</li></a>
+            <a href="Information.html">
+                <li>info</li>
+            </a>
+            <a href="contact.html">
+                <li>Contact</li>
+            </a>
         </div>
         <p class="Nom">Mentions légales : </p>
         <p class="texte">“projet réalisé dans le cadre d’un exercice
