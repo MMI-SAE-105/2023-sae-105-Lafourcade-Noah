@@ -4,3 +4,14 @@
 @import "footer.css";
 @import "vendors/normalize.css";
 @import "fonts.css";
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    display: grid;
+    place-content: center;
+ 

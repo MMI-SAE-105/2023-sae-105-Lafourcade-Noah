@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}"
+    :class="{noscroll:menuIsOpen"}>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="stylesheet" href="src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="src/css/style.css">    
 </head>
 
 <body>
-    <header>
-        <img class="logo" src="public/img/Logo.webp" alt="Logo">
+  
+        <nav x-show="menuIsOpen" id="mainNav" x-transition.duration.800ms class="menu">
+          <ul>
+            <li><a href="#">item 1</a></li>
+            <li><a href="#">item 2</a></li>
+            <li><a href="#">item 3</a></li>
+  
+          </ul>
+        </nav>
     </header>
 
     <main>
@@ -23,7 +32,7 @@
             Pour plus d’info cliquez sur le bouton.</p>
 
         <div class="bouton_1">
-            <p class="texte_b"> Tarifs/Dates</p>
+            <p class="texte_b"> Info</p>
             <img class="fleche" src="public/img/Accueil/arrow.svg" alt="arrow">
         </div>
 
@@ -109,12 +118,12 @@
     </main>
 
     <footer>
-        
+
         <img class="logo" src="public/img/Logo.webp" alt="Logo">
         <div class="footer_lien">
-        <p class="">info</p>
-        <p class="">Contact</p>
-    </div>
+            <p class="">info</p>
+            <p class="">Contact</p>
+        </div>
         <p class="Nom">Mentions légales : </p>
         <p class="texte">“projet réalisé dans le cadre d’un exercice
             pédagogique au département MMi de Montbéliard“</p>
