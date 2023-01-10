@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen:false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="public/img/Logo.webp" alt="Logo">
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+            <img class="menu_image" src="public/img/Menu-icon-close.webp" alt="menu">
+
+        </button>
+        <nav x-show="menuIsOpen" id="mainNav" x-transition.duration.100ms class="menu">
+            <img style="margin-top: -399px; margin-left: -50px;" class="logo" src="public/img/Logo.webp" alt="Logo">
+            <ul style="list-style-type: none;">
+                
+                <h2>Artistes</h2>
+                <li class="Nom"><a href="Tony.html">Tony Smith </a></li>
+                <li class="Nom"><a href="francois.html">François Morellet </a></li>
+                <li class="Nom"><a href="gego.html">Gego</a></li>
+                <li class="Nom"><a href="bice.html">Bice Lazzari</a></li>
+                <hr>
+                <li class="Nom"><a href="bice.html">Billetterie</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
