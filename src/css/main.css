@@ -13,8 +13,8 @@ h1 {
 }
 
 .texte {
-padding-left: 20px;
-padding-right: 70px;
+    padding-left: 20px;
+    padding-right: 70px;
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 400;
@@ -33,9 +33,29 @@ padding-right: 70px;
 
 h2 {
     font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 125%;
-font-size: var(--title);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 125%;
+    font-size: var(--title);
+}
+
+.bouton_1 {
+    width: 167px;
+    height: 40px;
+    left: 13px;
+    top: 348px;
+    display: block;
+    background: #000000;
+    border-radius: 36px;
+}
+
+.texte_b {
+    text-align: center;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: #ffffff;
+    font-size: var(--texte);
 }
