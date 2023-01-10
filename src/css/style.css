@@ -19,7 +19,6 @@
 
 .header__menuBtn {
     position: relative;
-    left: 40%;
     z-index: 10;
     border: none;
     background: none;
@@ -31,5 +30,6 @@ overflow: hidden;
 }
 
 .menu_image {
+    margin-left: 250%;
     width: 50%;
 }
