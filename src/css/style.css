@@ -6,7 +6,7 @@
 @import "fonts.css";
 
 .menu {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -14,22 +14,24 @@
     background: #fff;
     display: grid;
     place-content: center;
-
+    
 }
 
 .header__menuBtn {
     position: relative;
     z-index: 10;
     border: none;
+    padding: none;
+    margin: none;
     background: none;
+    left: 35%;
 }
   
-.noscroll,
+
 .noscroll body {
 overflow: hidden;
 }
 
 .menu_image {
-    margin-left: 250%;
-    width: 50%;
+    max-width: 60%;
 }
