@@ -12,23 +12,24 @@
 
 <body>
     <header>
-        <img class="logo" src="public/img/Logo.webp" alt="Logo">
+        <a href="index.html"> <img class="logo" src="public/img/Logo.webp" alt="Logo"> </a>
         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
             <img class="menu_image" src="public/img/Menu-icon-close.webp" alt="menu">
 
         </button>
         <nav x-show="menuIsOpen" id="mainNav" x-transition.duration.100ms class="menu">
-            <img style="margin-top: -399px; margin-left: -50px;" class="logo" src="public/img/Logo.webp" alt="Logo">
-            <ul style="list-style-type: none;">
-                
-                <h2>Artistes</h2>
-                <li class="Nom"><a href="Tony.html">Tony Smith </a></li>
-                <li class="Nom"><a href="francois.html">François Morellet </a></li>
-                <li class="Nom"><a href="gego.html">Gego</a></li>
-                <li class="Nom"><a href="bice.html">Bice Lazzari</a></li>
-                <hr>
-                <li class="Nom"><a href="bice.html">Billetterie</a></li>
-            </ul>
+            <img style="margin-top: -399px; margin-left: -50px;" class="logo"
+                    src="public/img/Logo.webp" alt="Logo">
+                <ul style="list-style-type: none;">
+
+                    <h2>Artistes</h2>
+                    <li class="Nom"><a href="Tony.html">Tony Smith </a></li>
+                    <li class="Nom"><a href="francois.html">François Morellet </a></li>
+                    <li class="Nom"><a href="gego.html">Gego</a></li>
+                    <li class="Nom"><a href="bice.html">Bice Lazzari</a></li>
+                    <hr>
+                    <li class="Nom"><a href="bice.html">Billetterie</a></li>
+                </ul>
         </nav>
     </header>
 
