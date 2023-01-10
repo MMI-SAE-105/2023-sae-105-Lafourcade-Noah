@@ -82,12 +82,32 @@ h2 {
     font-size: var(--texte);
 }
 
+.frise_box{
 
-.frise_box {
-    display: flex; 
-    flex-direction: column;
 }
 .image_frise {
     width: 150px;
     box-shadow: 0px 4px 19px 7px rgba(0, 0, 0, 0.25);
+    margin-left: 20px;
+}
+
+.date_frise {
+    position: relative;
+    bottom: 150px;
+    left: 180px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    font-size: var(--title);
+}
+
+.text_frise {
+    position: relative;
+    bottom: 180px;
+    left: 180px;
+    font-family: 'Mulish';
+    color: #000000;
+    font-size: var(--texte);
+    margin-bottom: -120px;
 }
