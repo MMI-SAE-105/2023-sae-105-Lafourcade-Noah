@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}"
-    :class="{noscroll:menuIsOpen"}>
+<html lang="en" x-data="{menuIsOpen:false}" :class="{noscroll:menuIsOpen,}">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +11,11 @@
 </head>
 
 <body>
-  
+    <header>
+        <img class="logo" src="public/img/Logo.webp" alt="Logo">
+        <button aria-controls="mainNav"
+        @click="menuIsOpen = ! menuIsOpen"
+        class="header__menuBtn"> kfrk,frrf</button>
         <nav x-show="menuIsOpen" id="mainNav" x-transition.duration.800ms class="menu">
           <ul>
             <li><a href="#">item 1</a></li>

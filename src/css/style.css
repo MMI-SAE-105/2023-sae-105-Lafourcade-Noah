@@ -14,4 +14,18 @@
     background: #fff;
     display: grid;
     place-content: center;
- 
+    
+}
+
+.header__menuBtn {
+    position: relative;
+    left: px;
+    z-index: 10;
+    border: none;
+    background: none;
+}
+  
+.noscroll,
+.noscroll body {
+overflow: hidden;
+}
