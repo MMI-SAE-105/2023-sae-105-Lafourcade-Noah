@@ -4,6 +4,7 @@
 @import "footer.css";
 @import "vendors/normalize.css";
 @import "fonts.css";
+@import "form.css";
 
 .menu {
     position: fixed;
