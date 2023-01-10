@@ -24,6 +24,7 @@ h1 {
 }
 
 .Nom {
+    padding-left: 20px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -32,6 +33,8 @@ h1 {
 }
 
 h2 {
+    padding-left: 20px;
+    padding-right: 40px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -58,4 +61,33 @@ h2 {
     line-height: 150%;
     color: #ffffff;
     font-size: var(--texte);
+}
+
+.bouton_2 {
+    box-sizing: border-box;
+    color: #E6E6E6;
+    width: 187px;
+    height: 40px;
+    border: 1px solid #000000;
+    border-radius: 36px;
+}
+
+.texte_bouton {
+    text-align: center;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: #000000;
+    font-size: var(--texte);
+}
+
+
+.frise_box {
+    display: flex; 
+    flex-direction: column;
+}
+.image_frise {
+    width: 150px;
+    box-shadow: 0px 4px 19px 7px rgba(0, 0, 0, 0.25);
 }
