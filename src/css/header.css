@@ -1,3 +1,11 @@
 header {
+    position: sticky;
     background-color: #FFFFFF;
+    padding-top: 100%;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0%;
+
+    border-radius: 0px 0px 32px 32px;
+    color: #fff;
 }
