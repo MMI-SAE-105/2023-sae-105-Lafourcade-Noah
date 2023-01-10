@@ -52,7 +52,7 @@ h2 {
     display: block;
     background: #000000;
     border-radius: 36px;
-    
+
 }
 
 .texte_b {
@@ -96,7 +96,7 @@ h2 {
 .date_frise {
     position: relative;
     bottom: 150px;
-    left: 180px;
+    margin-left: 180px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -107,7 +107,7 @@ h2 {
 .text_frise {
     position: relative;
     bottom: 180px;
-    left: 180px;
+    margin-left: 180px;
     font-family: 'Mulish';
     color: #000000;
     font-size: var(--texte);
@@ -124,10 +124,10 @@ h2 {
 }
 
 .fleche {
-position: relative;
-width: 40px;
-left: 110px;
-top: -33px;
+    position: relative;
+    width: 40px;
+    left: 110px;
+    top: -33px;
 }
 
 hr {
