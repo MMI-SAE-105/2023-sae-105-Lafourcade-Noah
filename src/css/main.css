@@ -168,11 +168,6 @@ li {
     width: 70%;
 }
 
-a {
-    text-decoration: none;
-    color: none;
-}
-
 .tache { 
     width: 200px;
     rotate: 90deg;
@@ -199,3 +194,17 @@ top: 140px;
     justify-content: center;
 
 }
+
+.menu a{
+    list-style-type: none; 
+    text-decoration: none;
+    color: #000000;
+}
+
+a {
+    list-style-type: none; 
+    text-decoration: none;
+    color: #000000;
+}
+
+
