@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen:false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"> <img class="logo" src="public/img/Logo.webp" alt="Logo"> </a>
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+            <img class="menu_image" src="public/img/Menu-icon-close.webp" alt="menu">
+
+        </button>
+        <nav x-show="menuIsOpen" id="mainNav" x-transition.duration.100ms class="menu">
+            <img style="margin-top: -399px; margin-left: -50px;" class="logo" src="public/img/Logo.webp" alt="Logo">
+
+            <h2>Artistes</h2>
+            <ul style="list-style-type: none;">
+                <li class="Nom"><a href="Tony.html">Tony Smith </a></li>
+                <li class="Nom"><a href="francois.html">François Morellet </a></li>
+                <li class="Nom"><a href="gego.html">Gego</a></li>
+                <li class="Nom"><a href="bice.html">Bice Lazzari</a></li>
+                <hr>
+                <li class="Nom"><a href="bice.html">Billetterie</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Sphere</h1>
+        <img class="image_oeuvre" src="public/img/Francois/Sphere.webp" alt="Source">
+
+        <p class="texte">'Asteriskos' a été créé en 1968 par Tony Smith dans un style minimaliste.</p>
+        <p class="texte">Artiste : <br>
+            Tony Smith (américain, 1912 - 1980)
+            <br>
+            Titre : <br>
+            Asteriskos, 1968 - 1968 <br>
+            <br>
+            Support : <br>
+            Bronze <br>
+            <br>
+            Taille : <br>
+            41,9 x 41,9 x 41,9 (cm)
+            16.5 x 16.5 x 16.5 (in.)
+        </p>
+
+        <h2>Une autre oeuvre</h2>
+
+        <img class="image_caroussel" src="public/img/Francois/32_rectangles.webp" alt="image_caroussel">
+
+        <div class="bouton_2"> <a href="32rectangles.html">
+                <p class="texte_bouton"> En savoir plus </p>
+                <img class="fleche" src="public/img/arrow_n.webp" alt="arrow">
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <img class="logo" src="public/img/Logo.webp" alt="Logo">
+        <div class="footer_lien" style="list-style-type: none; padding-top: 10px;">
+            <ul>
+                <li><a href="Information.html">info</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <p class="Nom">Mentions légales : </p>
+        <p class="texte">“projet réalisé dans le cadre d’un exercice
+            pédagogique au département MMi de Montbéliard“</p>
+        <img class="mmi_logo" src="public/img/mmi_logo.png" alt="mmi_logo">
+    </footer>
+
+</body>
+
+</html>
