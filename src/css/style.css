@@ -5,6 +5,7 @@
 @import "vendors/normalize.css";
 @import "fonts.css";
 @import "form.css";
+@import "couroussel.css";
 
 .menu {
     position: fixed;

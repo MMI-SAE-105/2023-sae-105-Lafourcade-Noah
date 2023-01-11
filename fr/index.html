@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <a href="index.html"> <img class="logo" src="public/img/Logo.webp" alt="Logo"> </a>
+        <a href="fr/index.html"> <img class="logo" src="public/img/Logo.webp" alt="Logo"> </a>
         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
             <img class="menu_image" src="public/img/Menu-icon-close.webp" alt="menu">
 
@@ -22,12 +22,12 @@
             <ul style="list-style-type: none;">
 
                 <h2>Artistes</h2>
-                <li class="Nom"><a href="Tony.html">Tony Smith </a></li>
-                <li class="Nom"><a href="francois.html">François Morellet </a></li>
-                <li class="Nom"><a href="gego.html">Gego</a></li>
-                <li class="Nom"><a href="bice.html">Bice Lazzari</a></li>
+                <li class="Nom"><a href="fr/Tony.html">Tony Smith </a></li>
+                <li class="Nom"><a href="fr/francois.html">François Morellet </a></li>
+                <li class="Nom"><a href="fr/gego.html">Gego</a></li>
+                <li class="Nom"><a href="fr/bice.html">Bice Lazzari</a></li>
                 <hr>
-                <li class="Nom"><a href="billetterie.html">Billetterie</a></li>
+                <li class="Nom"><a href="fr/billetterie.html">Billetterie</a></li>
             </ul>
         </nav>
     </header>
@@ -40,7 +40,7 @@
             plusieurs oeuvres d’Artistes reconnues
             Pour plus d’info cliquez sur le bouton.</p>
 
-        <a href="Information.html">
+        <a href="fr/Information.html">
             <div class="bouton_1">
                 <p class="texte_b"> Informations</p>
                 <img class="fleche" src="public/img/Accueil/arrow.svg" alt="arrow">
@@ -53,7 +53,7 @@
 
         <h2>Acheter vos billets</h2>
 
-        <a href="billetterie.html">
+        <a href="fr/billetterie.html">
             <div class="bouton_1">
                 <p class="texte_b"> Billeterie </p>
                 <img class="fleche" src="public/img/Accueil/arrow.svg" alt="arrow">
@@ -66,7 +66,7 @@
         <p class="Nom">Tony Smith</p>
         <p class="texte">Tony Smith, né le 23 septembre 1912 à South Orange (New Jersey) et mort </p>
 
-        <a href="Tony.html">
+        <a href="fr/Tony.html">
             <div class="bouton_2">
                 <p class="texte_bouton"> En savoir plus </p>
                 <img class="fleche" src="public/img/arrow_n.webp" alt="arrow">
@@ -79,7 +79,7 @@
         <p class="Nom">François Morellet</p>
         <p class="texte">François Morellet, né le 30 avril 1926 à Cholet (Maine-et-Loire) et mort le 11 mai 2016 dans cette même ville.</p>
 
-        <a href="francois.html">
+        <a href="fr/francois.html">
             <div class="bouton_2">
                 <p class="texte_bouton"> En savoir plus </p>
                 <img class="fleche" src="public/img/arrow_n.webp" alt="arrow">
@@ -92,7 +92,7 @@
         <p class="Nom">Gego</p>
         <p class="texte">Gertrud Louise Goldschmidt connue sous le nom de Gego, est une artiste vénézuélienne. </p>
 
-        <a href="gego.html">
+        <a href="fr/gego.html">
             <div class="bouton_2">
                 <p class="texte_bouton"> En savoir plus </p>
                 <img class="fleche" src="public/img/arrow_n.webp" alt="arrow">
@@ -105,7 +105,7 @@
         <p class="Nom">Bice Lazzari</p>
         <p class="texte">Beatrice "Bice" Lazzari (15 novembre 1900 - 13 novembre 1981) était une peintre italienne.</p>
 
-        <a href="bice.html">
+        <a href="fr/bice.html">
             <div class="bouton_2">
                 <p class="texte_bouton"> En savoir plus </p>
                 <img class="fleche" src="public/img/arrow_n.webp" alt="arrow">
@@ -139,6 +139,24 @@
             </div>
 
         </div>
+        
+        <h2>Autres oeuvre minimalistes</h2>
+        <div class="carrousel" x-data="{hrefCourant:'#ecran-1',}">
+            <button class="carrousel_btn carrousel_btn_gauche"
+                @click="const p =$refs.parent ;  p.scrollLeft-= p.clientWidth"> <img src="public/img/Carousel_button_gauche.svg" alt="bouton gauche"> </button>
+                    <button class="carrousel_btn carrousel_btn_droite" 
+                        @click="const p =$refs.parent ;  p.scrollLeft+= p.clientWidth"> <img src="public/img/Carousel_button_droite.svg" alt="bouton droite"></button>
+                    <div class="carrousel_parent-ecrans" x-ref="parent">
+                        <div id="ecran-1" class="carrousel_ecran">
+                            <figure>
+                                <img class="image_carrousel"src="public/img/tony/source.webp" alt="image ecran 1">
+                            </figure>
+                        </div>
+                        <div id="ecran-2" class="carrousel_ecran">
+                            <figure>
+                                <img class="image_carrousel" src="public/img/tony/Asteriskos.webp" alt="image ecran 2">
+                            </figure>
+                        </div>
     </main>
 
     <footer>
@@ -146,8 +164,8 @@
         <img class="logo" src="public/img/Logo.webp" alt="Logo">
         <div class="footer_lien" style="list-style-type: none; padding-top: 10px;">
             <ul>
-                <li><a href="Information.html">info</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="fr/Information.html">info</a></li>
+                <li><a href="fr/fr/contact.html">Contact</a></li>
             </ul>
         </div>
         <p class="Nom">Mentions légales : </p>
