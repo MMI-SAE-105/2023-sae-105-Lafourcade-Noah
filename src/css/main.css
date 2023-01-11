@@ -44,8 +44,9 @@ h2 {
 }
 
 .bouton_1 {
+    box-sizing: border-box;
     margin-left: 20px;
-    width: 167px;
+    width: 187px;
     height: 40px;
     left: 13px;
     top: 348px;
@@ -127,7 +128,7 @@ h2 {
 .fleche {
     position: relative;
     width: 40px;
-    left: 110px;
+    left: 130px;
     top: -33px;
 }
 
