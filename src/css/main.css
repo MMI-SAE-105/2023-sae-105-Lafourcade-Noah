@@ -158,3 +158,9 @@ li {
 .image_caroussel {
     width: 50%;
 }
+
+.image_oeuvre {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
