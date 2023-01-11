@@ -174,7 +174,19 @@ a {
 }
 
 .tache { 
-    margin-top: -150px;
     width: 200px;
     rotate: 90deg;
+    z-index: -2;
 }
+
+.error {
+    color: #ffffff;
+    z-index: 10;
+position: absolute;
+top: 140px;
+}
+
+.relative {
+    position: relative;
+}
+

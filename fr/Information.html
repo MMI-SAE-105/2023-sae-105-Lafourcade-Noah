@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{menuIsOpen:false}" :class="{noscroll:menuIsOpen,}">
+<html lang="en" x-data="{menuIsOpen: false, imgAppa1: false}" :class="{noscroll:menuIsOpen,}">
 
 <head>
     <meta charset="UTF-8">
@@ -32,8 +32,15 @@
         </nav>
     </header>
     <main>
+        <div x-data="{ open: false }">
+            <button @click="open = ! open"><p class="texte">Dates de l’exposition :</p> </button>
+         
+            <span x-show="open" x-transition>
+                Hello 👋
+            </span>
+        </div>
         <h1>Informations</h1>
-        <p class="texte">Dates de l’exposition : <br>
+    
             du 13 avril au 23 juin 2021</p>
         <p class="texte">Lieu de l’exposition : Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
 
@@ -49,7 +56,8 @@
             Fondation Cartier Pass ⇒ 18€ - 50€
             Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier
             Pass, Etudiants ==> Gratuit</p>
-
+        
+            </div>
 
             <footer>
 

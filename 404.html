@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen:false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="fr/index.html"> <img class="logo" src="/public/img/Logo.webp" alt="Logo"> </a>
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+            <img class="menu_image" src="/public/img/Menu-icon-close.webp" alt="menu">
+
+        </button>
+        <nav x-show="menuIsOpen" id="mainNav" x-transition class="menu">
+            <img style="margin-top: -399px; margin-left: -50px;" class="logo" src="/public/img/Logo.webp" alt="Logo">
+            <ul style="list-style-type: none;">
+
+                <h2>Artistes</h2>
+                <li class="Nom"><a href="fr/Tony.html">Tony Smith </a></li>
+                <li class="Nom"><a href="fr/francois.html">François Morellet </a></li>
+                <li class="Nom"><a href="fr/gego.html">Gego</a></li>
+                <li class="Nom"><a href="fr/bice.html">Bice Lazzari</a></li>
+                <hr>
+                <li class="Nom"><a href="fr/billetterie.html">Billetterie</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>404 | Page non trouvée</h1>
+        <div>
+            <title>404 | Page non trouvée</title>
+            <p class="ptitre404 paddingleft20">Page non trouvée</p>
+            <p class="ptitre404 paddingleft20">ERREUR 404</p>
+            <form action="https://google.com/" method="GET" x-data="{ q:'', }"
+                x-on:submit="q = q + ' site:minimalist.noahlafourcade.fr'">
+                <label for="q">
+                    <p class="pcorps404 paddingleft20">Que cherchez-vous ?</p>
+                </label>
+                <input type="text" id="recherche" name="recherche" x-model="q" placeholder="Message">
+                <button type="submit">
+                    <p class="pcorps404">Rechercher</p>
+                </button>
+            </form>
+        </div>
+        <div>
+            <p class="ooooooooo">Les différentes pages du sites: </p>
+            <a href="./fr/32rectangles.html"><p class="oooooooo">NEED NAME</p></a>
+            <a href="./fr/Acriloco.html"><p class="oooooooo">NEED NAME</p></a>
+
+            <a href="./fr/asteriskos.html"><p class="oooooooo">NEED NAME</p></a>
+            <a href="./fr/Autoritratto.html"><p class="oooooooo">NEED NAME</p></a>
+            <a href="./fr/bice.html"><p class="oooooooo">NEED NAME</p></a>
+
+            <a href="./fr/bichito.html"><p class="oooooooo">NEED NAME</p></a>
+
+            <a href="./fr/billetterie.html"><p class="oooooooo">NEED NAME</p></a>
+            <a href="./fr/contact.html"><p class="oooooooo">NEED NAME</p></a>
+            <a href="./fr/esfera.html"><p class="oooooooo">NEED NAME</p></a>
+            <a href="./fr/francois.html"><p class="oooooooo">NEED NAME</p></a>
+            <a href="./fr/gego.html"><p class="oooooooo">NEED NAME</p></a>
+            <a href="./fr/index.html"><p class="oooooooo">NEED NAME</p></a>
+
+            <a href="./fr/Information.html"><p class="oooooooo">NEED NAME</p></a>
+
+            <a href="./fr/source.html"><p class="oooooooo">NEED NAME</p></a>
+            <a href="./fr/sphere.html"><p class="oooooooo">NEED NAME</p></a>
+            <a href="./fr/Tony.html"><p class="oooooooo">NEED NAME</p></a>
+        </div>
+        </div>
+
+    </main>
+</body>
+       
+    </main>
+
+    <footer>
+
+        <img class="logo" src="/public/img/Logo.webp" alt="Logo">
+        <div class="footer_lien" style="list-style-type: none; padding-top: 10px;">
+            <ul>
+                <li><a href="fr/Information.html">info</a></li>
+                <li><a href="fr/fr/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <p class="Nom">Mentions légales : </p>
+        <p class="texte">“projet réalisé dans le cadre d’un exercice
+            pédagogique au département MMi de Montbéliard“</p>
+        <img class="mmi_logo" src="/public/img/mmi_logo.png" alt="mmi_logo">
+    </footer>
+
+</body>
+
+</html>
