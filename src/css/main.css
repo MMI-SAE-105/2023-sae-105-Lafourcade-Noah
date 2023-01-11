@@ -140,14 +140,13 @@ hr {
     stroke-width: 50%;
 
 }
-
 ul {
-    margin-top: -300px;
-    
+    list-style-type: none;
 }
+
 li {
     text-decoration: none;
-    
+    list-style-type: none;
     position: relative;
     right: 50px;
 }
@@ -167,4 +166,9 @@ li {
     display: block;
     margin: auto;
     width: 70%;
+}
+
+a {
+    text-decoration: none;
+    color: none;
 }
