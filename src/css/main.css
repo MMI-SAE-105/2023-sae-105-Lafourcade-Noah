@@ -168,12 +168,6 @@ li {
     width: 70%;
 }
 
-.tache { 
-    width: 200px;
-    rotate: 90deg;
-    z-index: -2;
-}
-
 .error {
     color: #ffffff;
     z-index: 10;
